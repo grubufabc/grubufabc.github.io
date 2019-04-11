@@ -220,8 +220,8 @@ table {
       position: absolute;
       top: 9px;
       right: 15px;
-      background-color: #ffffff;
-      border: 1px solid #e8e8e8;
+      background-color: #21231f;
+      border: 1px solid #21231f;
       border-radius: 5px;
       text-align: right; }
       .site-nav label[for="nav-trigger"] {
@@ -240,7 +240,7 @@ table {
         padding-top: 10px;
         text-align: center; }
         .site-nav .menu-icon > svg {
-          fill: #424242; }
+          fill: #ffffff; }
       .site-nav input ~ .trigger {
         clear: both;
         display: none; }
