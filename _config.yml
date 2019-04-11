@@ -20,7 +20,7 @@ email: grub.ufabc@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   A equipe de programação competitiva da UFABC! 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://grub.github.io # the base hostname & protocol for your site, e.g. http://example.com
+url: https://grubufabc.github.io # the base hostname & protocol for your site, e.g. http://example.com
 facebook_username:  grub.ufabc
 instagram_username:  grubufabc
 
