@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-11T10:31:23-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GRUB</title><subtitle>A equipe de programação competitiva da UFABC! </subtitle><entry><title type="html">n+1, n++ e ++n, qual usar?</title><link href="http://localhost:4000/publicacoes/incremento-dif.md" rel="alternate" type="text/html" title="n+1, n++ e ++n, qual usar?" /><published>2019-04-04T20:00:00-03:00</published><updated>2019-04-04T20:00:00-03:00</updated><id>http://localhost:4000/publicacoes/incremento-dif.md</id><content type="html" xml:base="http://localhost:4000/publicacoes/incremento-dif.md">&lt;p&gt;Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, &lt;strong&gt;qual a diferença entre n+1, n++ e ++n?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Bom, para começar analise o código a seguir e tente adivinhar o que ele irá imprimir:&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;bits/stdc++.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Quais números ele irá imprimir?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;11, 12, 13&lt;/li&gt;
+  &lt;li&gt;11, 10, 12&lt;/li&gt;
+  &lt;li&gt;11, 12, 13&lt;/li&gt;
+  &lt;li&gt;10, 10, 10&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Antes de continuar tente pensar na resposta.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Pense…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Pense…&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Pronto? Beleza!&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A resposta certa são os números… &lt;em&gt;suspense&lt;/em&gt;… 11, 10, 12 !!!&lt;/p&gt;
+
+&lt;p&gt;É estranho, mas vamos entender o que significa cada coisa:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;n+1:&lt;/strong&gt; simplesmente estamos pegando o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e adicionando 1, mas atenção: não estamos alterando o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;! A única coisa que fazemos é utilizar o valor armazenado na variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;Caso o objetivo seja acrescentar 1 em &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;, precisamos escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, atribua a &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n+1&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;n++:&lt;/strong&gt; é o mesmo que escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, estamos adicionando 1 à variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;. Em caso de utilização de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; durante o esse incremento, primeiro é utilizado o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ele é incrementado.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;++n:&lt;/strong&gt; é o mesmo que escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, estamos adicionando 1 à variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;. Em caso de utilização de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; durante o esse incremento, primeiro é incrementado o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ele é utilizado.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No caso do &lt;code class=&quot;highlighter-rouge&quot;&gt;cout &amp;lt;&amp;lt;n++&lt;/code&gt;, o que realmente acontece é que primeiro é impresso o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ocorre o incremento. Em &lt;code class=&quot;highlighter-rouge&quot;&gt;cout &amp;lt;&amp;lt;++n&lt;/code&gt; é o contrário, primeiro ocorre o incremento e depois é impresso o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; (já incrementado em 1 unidade).&lt;/p&gt;
+
+&lt;p&gt;Valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; linha por linha:&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;bits/stdc++.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;using&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;namespace&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;std&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// n = 10&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// n = 10&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// n = 10&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// n = 10&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// n = 11&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;cout&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;++&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;endl&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// n = 12&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// n = 12&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, qual a diferença entre n+1, n++ e ++n?</summary></entry><entry><title type="html">Sites de treino</title><link href="http://localhost:4000/publicacoes/sites-de-treino" rel="alternate" type="text/html" title="Sites de treino" /><published>2019-04-03T22:03:00-03:00</published><updated>2019-04-03T22:03:00-03:00</updated><id>http://localhost:4000/publicacoes/sites-de-treino</id><content type="html" xml:base="http://localhost:4000/publicacoes/sites-de-treino">&lt;p&gt;Existem alguns sites que podem ser utilizados para treinar, possuindo diversos problemas de diversas áreas das competições de programação. Alguns deles possuem competições (contests) semanais/mensais que podem ser feitas para evoluir seu “nível” em cada site.&lt;/p&gt;
+
+&lt;h2 id=&quot;codeforces&quot;&gt;Codeforces&lt;/h2&gt;
+
+&lt;p&gt;O &lt;a href=&quot;https://codeforces.com/&quot;&gt;Codeforces&lt;/a&gt; é o principal site para participar de contests de curta duração (cerca de duas horas). Nele é possível também resolver problemas avulsos e simular competições passadas para treinar.&lt;/p&gt;
+
+&lt;h3 id=&quot;ambiente-inicial&quot;&gt;Ambiente inicial&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/codeforces_1.png&quot; alt=&quot;Ambiente inicial - codeforces&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;contests&quot;&gt;Contests&lt;/h3&gt;
+
+&lt;p&gt;A aba &lt;code class=&quot;highlighter-rouge&quot;&gt;CONTESTS&lt;/code&gt; é onde pode-se registrar para as competições que irão acontecer ou simular as que já ocorreram como se você estivesse participando ao vivo (exceto pela pontuação no ranking que não é considerada).&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/codeforces_2.png&quot; alt=&quot;Ambiente inicial - codeforces&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;identificando-onde-seu-programa-deu-errado&quot;&gt;Identificando onde seu programa deu errado&lt;/h3&gt;
+
+&lt;p&gt;Muitas vezes você vai fazer um código que tem a absoluta certeza que está correto, mas recebe como resposta &lt;code class=&quot;highlighter-rouge&quot;&gt;wrong answer&lt;/code&gt;. O ideal é que você tente identificar sem ajuda em que caso seu problema pode ter dado errado, mas caso isso não seja efetivo o codeforces disponibiliza o caso que obeteve uma saída errada.&lt;/p&gt;
+
+&lt;p&gt;Em suas submissões, encontre o problema que deu errado e clique para ver a sumissão.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;./img/codeforces_3.png&quot; alt=&quot;Ambiente inicial - codeforces&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/codeforces_4.png&quot; alt=&quot;Ambiente inicial - codeforces&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Existem outras funcionalidades no site, para descobrir é só explorar.&lt;/p&gt;
+
+&lt;h2 id=&quot;codcad&quot;&gt;CodCad&lt;/h2&gt;
+
+&lt;p&gt;O &lt;a href=&quot;http://www.codcad.com/course/1&quot;&gt;Codcad&lt;/a&gt; é o melhor site para aprender conceitos iniciais sobre programação competitiva. Ele é diferente do Codeforces, pois seu foco está em ensinar algoritmos e técnicas de programação através de video aulas ou textos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/codcad_1.png&quot; alt=&quot;Ambiente inicial - codcad&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;É essencial dominar todos os tópicos apresentados no Codcad na profundidade em que eles são ensinados no site (no mínimo), porque é o básico necessário para ser um bom competidor(a).&lt;/p&gt;
+
+&lt;p&gt;Atualmente (2019) o CodCad está passando seu conteúdo para o site &lt;a href=&quot;https://neps.academy/courses&quot;&gt;NepsAcademy&lt;/a&gt;. Sugiro que façam por lá pois parece estar mais organizado.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/nepsacademy_01.png&quot; alt=&quot;Ambiente inicial - NepsAcademy&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;A ordem que eu sugiro é:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Programação Básica para Competições de Programação (em C++) - &lt;strong&gt;Completo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Técnicas de Programação para Competições de Programação (em C++) - &lt;strong&gt;Até “Técnicas Básicas”&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Estruturas de Dados para Competições de Programação (em C++) - &lt;strong&gt;Até “Técnicas Intermediárias”&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Técnicas de Programação para Competições de Programação (em C++) - &lt;strong&gt;Terminar&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Estruturas de Dados para Competições de Programação (em C++) - &lt;strong&gt;Terminar&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Algoritmos em Grafos para Competições de Programações (em C++) - &lt;strong&gt;Completo&lt;/strong&gt;&lt;/li&gt;
+  &lt;li&gt;Matemática Computacional para Competições de Programação (em C++) - &lt;strong&gt;Completo&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Caso você ache que a ordem não está boa sinta-se a vontade para mudar do seu jeito, o importante é fazer!&lt;/p&gt;
+
+&lt;h2 id=&quot;spoj&quot;&gt;Spoj&lt;/h2&gt;
+
+&lt;p&gt;O Spoj é um bom lugar para treinar problemas de tópicos específicos ou para encontrar um problema aleatório. O estilo do site se assemelha ao Codeforces, porém  não tem contests para serem feitos.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/spoj_1.png&quot; alt=&quot;Ambiente inicial - Spoj&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Então é isso, basta começar a fazer!&lt;/p&gt;</content><author><name></name></author><summary type="html">Existem alguns sites que podem ser utilizados para treinar, possuindo diversos problemas de diversas áreas das competições de programação. Alguns deles possuem competições (contests) semanais/mensais que podem ser feitas para evoluir seu “nível” em cada site.</summary></entry><entry><title type="html">Dicas iniciais</title><link href="http://localhost:4000/publicacoes/dicas-iniciais" rel="alternate" type="text/html" title="Dicas iniciais" /><published>2019-04-03T21:57:00-03:00</published><updated>2019-04-03T21:57:00-03:00</updated><id>http://localhost:4000/publicacoes/dicas-iniciais</id><content type="html" xml:base="http://localhost:4000/publicacoes/dicas-iniciais">&lt;h4 id=&quot;navegação-no-terminal&quot;&gt;Navegação no terminal&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Comando&lt;/th&gt;
+      &lt;th&gt;Função&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cd &lt;em&gt;ex_diretorio&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;Acessa o diretório de nome “ex_diretorio”.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;cd ..&lt;/td&gt;
+      &lt;td&gt;Volta para diretório anterior.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;clear&lt;/td&gt;
+      &lt;td&gt;Limpa terminal.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;ls&lt;/td&gt;
+      &lt;td&gt;Exibe conteúdo do diretório.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;touch &lt;em&gt;ex_arquivo.cpp&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;Cria arquivo com o nome “ex_arquivo” e extensão .cpp&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;gedit &lt;em&gt;ex_arquivo.cpp&lt;/em&gt;&lt;/td&gt;
+      &lt;td&gt;Abre com o gedit (editor de texto padrão) o arquivo “ex_arquivo.cpp”&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;instalando-o-vim-no-ubuntu&quot;&gt;Instalando o VIM no Ubuntu&lt;/h4&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;sudo &lt;/span&gt;apt-get &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;vim
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://pt.wikipedia.org/wiki/Vim&quot;&gt;O que é o VIM?&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://blog.caelum.com.br/desvendando-o-editor-vim/&quot;&gt;Tutorial para aprender a usar o VIM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://vim-adventures.com/&quot;&gt;Joguinho para aprender a usar o VIM&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://gist.github.com/awidegreen/3854277&quot;&gt;Atalhos VIM&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;criando-um-programa-em-c-com-o-vim&quot;&gt;Criando um programa em C++ com o VIM&lt;/h4&gt;
+
+&lt;p&gt;Para criar um arquivo C++ com o nome “ufabc” utilizando o VIM basta escrever no terminal:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;vim ufabc.cpp
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Nesse momento será aberto o editor de texto VIM. Para aprender a utiliza-lo basta seguir os tutoriais em “Instalando o VIM no Ubuntu”.&lt;/p&gt;
+
+&lt;h4 id=&quot;estrutura-de-um-programa-em-c&quot;&gt;Estrutura de um programa em C++&lt;/h4&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;//Inclusão de bibliotecas, como por exemplo a stdio.h&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// Declaração da função principal&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;c1&quot;&gt;// Inserir código aqui:&lt;/span&gt;
+    
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Bibliotecas: uma coleção de classes, funções e variáveis escritas na própria linguagem para facilitar o desenvolvimento de aplicações. (&lt;a href=&quot;https://pt.wikipedia.org/wiki/Biblioteca_padr%C3%A3o_do_C%2B%2B&quot;&gt;Wikipédia&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Função principal: serve como o ponto de partida para a execução do programa. Em geral, ela controla a execução direcionando as chamadas para outras funções no programa. (&lt;a href=&quot;https://docs.microsoft.com/en-us/cpp/c-language/main-function-and-program-execution?view=vs-2017&quot;&gt;Microsoft docs&lt;/a&gt;)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;compilando-um-programa-em-c&quot;&gt;Compilando um programa em C++&lt;/h4&gt;
+
+&lt;p&gt;Para criar um executavel com o nome ufabc:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;g++ ufabc.cpp &lt;span class=&quot;nt&quot;&gt;-o&lt;/span&gt; ufabc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;executando-um-programa-em-c&quot;&gt;Executando um programa em C++&lt;/h4&gt;
+
+&lt;p&gt;No local onde o arquivo foi compilado:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;./ufabc
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;bibliotecas&quot;&gt;Bibliotecas&lt;/h4&gt;
+
+&lt;p&gt;​	Existem algumas bibliotecas que são bastante utilizadas, como:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Biblioteca&lt;/th&gt;
+      &lt;th&gt;Algumas funções&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;stdio.h&lt;/td&gt;
+      &lt;td&gt;printf, scanf, getc, gets, fopen, fclose&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;math.h&lt;/td&gt;
+      &lt;td&gt;sqrt, sin, cos, tan, log10&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;iostream&lt;/td&gt;
+      &lt;td&gt;cin, cout&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;tipos-de-variáveis&quot;&gt;Tipos de variáveis&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Variável&lt;/th&gt;
+      &lt;th&gt;Tamanho&lt;/th&gt;
+      &lt;th&gt;Alcance&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;bool&lt;/td&gt;
+      &lt;td&gt;1 byte&lt;/td&gt;
+      &lt;td&gt;0 ou 1&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;char&lt;/td&gt;
+      &lt;td&gt;1 byte&lt;/td&gt;
+      &lt;td&gt;Caracteres&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;int&lt;/td&gt;
+      &lt;td&gt;4 bytes&lt;/td&gt;
+      &lt;td&gt;$-2.10^{9}$ a $2.10^{9}$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;long long&lt;/td&gt;
+      &lt;td&gt;8 bytes&lt;/td&gt;
+      &lt;td&gt;$-9.10^{18}$ a $9.10^{18}$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;float&lt;/td&gt;
+      &lt;td&gt;4 bytes&lt;/td&gt;
+      &lt;td&gt;$-1.10^{37}$ a $1.10^{37}$&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;double&lt;/td&gt;
+      &lt;td&gt;8 bytes&lt;/td&gt;
+      &lt;td&gt;$-1.10^{37}$ a $1.10^{37}$, porém mais preciso que float&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;escrita-e-leitura-printfscanf&quot;&gt;Escrita e leitura: printf/scanf&lt;/h4&gt;
+
+&lt;h4 id=&quot;printf&quot;&gt;printf&lt;/h4&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Ola GRUB!&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;É possível, também, imprimir valores de variáveis utilizando o símbolo % seguido de um caractere.&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x = %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;scanf&quot;&gt;scanf&lt;/h4&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x = %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Variável&lt;/th&gt;
+      &lt;th&gt;Caractere&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;char&lt;/td&gt;
+      &lt;td&gt;c&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;int&lt;/td&gt;
+      &lt;td&gt;d&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;long long&lt;/td&gt;
+      &lt;td&gt;lld&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;float&lt;/td&gt;
+      &lt;td&gt;f&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;double&lt;/td&gt;
+      &lt;td&gt;lf&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;operadores&quot;&gt;Operadores&lt;/h4&gt;
+
+&lt;p&gt;Seja a = 1,  b = 2 e c = 3.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Operador&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;+&lt;/td&gt;
+      &lt;td&gt;Soma&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;-&lt;/td&gt;
+      &lt;td&gt;Subtração&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;/&lt;/td&gt;
+      &lt;td&gt;Divisão&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;*&lt;/td&gt;
+      &lt;td&gt;Multiplicação&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;%&lt;/td&gt;
+      &lt;td&gt;Resto da divisão&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Uma propriedade interessante da divisão é que, para variáveis do tipo &lt;strong&gt;int&lt;/strong&gt;, caso haja um valor decimal ele é ignorado, por exemplo:&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a/b = %d&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// a/b = 1&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Mesmo v sendo um double o valor de v é o mesmo!&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a/b = %lf&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// a/b = 1.000000&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Para que o valor seja dado corretamente é necessário que seja feito um &lt;em&gt;cast&lt;/em&gt;, ou seja, é necessário que forcemos o tipo de dado resultante em a/b.&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;double&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;a/b = %lf&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;v&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// a/b = 1.500000&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// é possivel limitar o número de casas decimais escrevendo:&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// printf(&quot;a/b = %.2lf, v);&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;// assim, estaremos limitando em 2 casas o valor que é impresso.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;condicionais-ifelse&quot;&gt;Condicionais: if/else&lt;/h4&gt;
+
+&lt;h4 id=&quot;if&quot;&gt;if&lt;/h4&gt;
+
+&lt;p&gt;​	O condicional &lt;strong&gt;if&lt;/strong&gt; executa certo trecho de código se determinada condição for cumprida.&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;c1&quot;&gt;// Se x for igual a 3, executa o código abaixo&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x eh igual a 3&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d %d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;c1&quot;&gt;// Se x for maior que 3, executa o código abaixo&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x eh maior que 3&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+       &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+           &lt;span class=&quot;c1&quot;&gt;// Se x+y for menor que 5, executa o código abaixo&lt;/span&gt;
+           &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x+y eh menor que 5&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+       &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Operações que podem ser feitas dentro do if:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Operador&lt;/th&gt;
+      &lt;th&gt; &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A == B&lt;/td&gt;
+      &lt;td&gt;compara se A é igual a B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A != B&lt;/td&gt;
+      &lt;td&gt;compara se A é diferente de B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A &amp;gt; B&lt;/td&gt;
+      &lt;td&gt;compara se A é maior que B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A &amp;lt; B&lt;/td&gt;
+      &lt;td&gt;compara se A é menor que B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A &amp;gt;= B&lt;/td&gt;
+      &lt;td&gt;compara se A é maior ou igual a B&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;A &amp;lt;= B&lt;/td&gt;
+      &lt;td&gt;compara se A é menor ou igual a B&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Além disso, é possivel utilizar as cláusulas &lt;strong&gt;and&lt;/strong&gt; e &lt;strong&gt;or&lt;/strong&gt; para inserir mais condições em um if:&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d %d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;y&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+       &lt;span class=&quot;c1&quot;&gt;// Se x e y forem positivos e x+y &amp;gt; 5, executa o código abaixo&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Condicoes atendidas&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;else&quot;&gt;else&lt;/h4&gt;
+
+&lt;p&gt;Para toda condição &lt;strong&gt;if&lt;/strong&gt; é possível inserir uma condição &lt;strong&gt;else&lt;/strong&gt;, a qual será executada SEMPRE que a condição &lt;strong&gt;if&lt;/strong&gt; acima dela não for.&lt;/p&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;%d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x é igual a 3&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;x não é igual a 3&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;​	Para a condição &lt;strong&gt;else&lt;/strong&gt; não é necessário inserir parenteses, pois a sua condição de execução depende do condicional &lt;strong&gt;if&lt;/strong&gt; acima.&lt;/p&gt;
+
+&lt;h4 id=&quot;outros-exemplos&quot;&gt;Outros exemplos&lt;/h4&gt;
+
+&lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;// par ou impar?&lt;/span&gt;
+&lt;span class=&quot;cp&quot;&gt;#include &amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;
+&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+	&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;scanf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot; %d&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;amp;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+		&lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Eh par&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;printf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Eh impar&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;sites-para-treino&quot;&gt;Sites para treino&lt;/h3&gt;
+
+&lt;p&gt;Segue alguns links de informações e treino.&lt;/p&gt;
+
+&lt;h4 id=&quot;problemas-para-treinar&quot;&gt;Problemas para treinar&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://neps.academy/courses&quot;&gt;NepsAcademy&lt;/a&gt; (indicado para iniciantes)&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://wiki.maratona.dcc.ufmg.br/index.php/Roteiros&quot;&gt;Roteros de estudo - DCC UFMG&lt;/a&gt; (contém alguns problemas selecionados por temas)&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://a2oj.com/ladders&quot;&gt;A2 Online Judge&lt;/a&gt; (existem centenas de problemas na aba Ladders que podem ser feitos segundo seu ranking no Codeforces)&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://uva.onlinejudge.org/&quot;&gt;UVa&lt;/a&gt; (site bugado, mas possui diversos problemas interessantes)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;contests&quot;&gt;Contests&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://codeforces.com/&quot;&gt;Codeforces&lt;/a&gt; (principal site para competições curtas (2 horas))&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://codechef.com/&quot;&gt;CodeChef&lt;/a&gt;  (interessante para competições longas (alguns dias de duração))&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;informações-gerais&quot;&gt;Informações gerais&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://www.ime.usp.br/~maratona/miscelania/comecando-a-treinar&quot;&gt;Como começar a treinar - MaratonIME&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;http://maratona.ime.usp.br/&quot;&gt;Site da Maratona de Programação&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://chat.whatsapp.com/C3oCB2Dp7u74YL3c66vEaq&quot;&gt;Grupo do Whats da GRUB&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://drive.google.com/drive/u/0/folders/1oBH9CC8OKZ3giTRGpmkM1gCUZsFtPNLw&quot;&gt;Drive da GRUB&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">Navegação no terminal</summary></entry></feed>

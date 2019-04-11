@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="br"><head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.0 -->
+<title>n+1, n++ e ++n, qual usar? | GRUB</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="n+1, n++ e ++n, qual usar?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, qual a diferença entre n+1, n++ e ++n?" />
+<meta property="og:description" content="Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, qual a diferença entre n+1, n++ e ++n?" />
+<link rel="canonical" href="http://localhost:4000/publicacoes/incremento-dif.md" />
+<meta property="og:url" content="http://localhost:4000/publicacoes/incremento-dif.md" />
+<meta property="og:site_name" content="GRUB" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2019-04-04T20:00:00-03:00" />
+<script type="application/ld+json">
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/publicacoes/incremento-dif.md"},"@type":"BlogPosting","url":"http://localhost:4000/publicacoes/incremento-dif.md","dateModified":"2019-04-04T20:00:00-03:00","datePublished":"2019-04-04T20:00:00-03:00","headline":"n+1, n++ e ++n, qual usar?","description":"Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, qual a diferença entre n+1, n++ e ++n?","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="GRUB" /></head>
+<body bgcolor="#000000"><header class="site-header" role="banner">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/"><img src="./../img/logo_semSub.png" height=40></a>
+
+    <!-- <a class="site-title" rel="author" href="/">GRUB</a> --><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/treinos/">Treinos</a><a class="page-link" href="/tutoriais/">Tutoriais</a><a class="page-link" href="/listas/">Listas</a><a class="page-link" href="/equipe/">Equipe</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">n+1, n++ e ++n, qual usar?</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="2019-04-04T20:00:00-03:00" itemprop="datePublished">Apr 4, 2019
+      </time></p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, <strong>qual a diferença entre n+1, n++ e ++n?</strong></p>
+
+<p>Bom, para começar analise o código a seguir e tente adivinhar o que ele irá imprimir:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;bits/stdc++.h&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span><span class="n">n</span><span class="o">++</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;++</span><span class="n">n</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>Quais números ele irá imprimir?</p>
+
+<ul>
+  <li>11, 12, 13</li>
+  <li>11, 10, 12</li>
+  <li>11, 12, 13</li>
+  <li>10, 10, 10</li>
+</ul>
+
+<p>Antes de continuar tente pensar na resposta.</p>
+
+<p><em>Pense…</em></p>
+
+<p><em>Pense…</em></p>
+
+<p><em>Pronto? Beleza!</em></p>
+
+<p>A resposta certa são os números… <em>suspense</em>… 11, 10, 12 !!!</p>
+
+<p>É estranho, mas vamos entender o que significa cada coisa:</p>
+
+<ul>
+  <li>
+    <p><strong>n+1:</strong> simplesmente estamos pegando o valor de <code class="highlighter-rouge">n</code> e adicionando 1, mas atenção: não estamos alterando o valor de <code class="highlighter-rouge">n</code>! A única coisa que fazemos é utilizar o valor armazenado na variável <code class="highlighter-rouge">n</code>.</p>
+
+    <p>Caso o objetivo seja acrescentar 1 em <code class="highlighter-rouge">n</code>, precisamos escrever <code class="highlighter-rouge">n = n+1</code>, ou seja, atribua a <code class="highlighter-rouge">n</code> o valor de <code class="highlighter-rouge">n+1</code>.</p>
+  </li>
+  <li>
+    <p><strong>n++:</strong> é o mesmo que escrever <code class="highlighter-rouge">n = n+1</code>, ou seja, estamos adicionando 1 à variável <code class="highlighter-rouge">n</code>. Em caso de utilização de <code class="highlighter-rouge">n</code> durante o esse incremento, primeiro é utilizado o valor de <code class="highlighter-rouge">n</code> e depois ele é incrementado.</p>
+  </li>
+  <li>
+    <p><strong>++n:</strong> é o mesmo que escrever <code class="highlighter-rouge">n = n+1</code>, ou seja, estamos adicionando 1 à variável <code class="highlighter-rouge">n</code>. Em caso de utilização de <code class="highlighter-rouge">n</code> durante o esse incremento, primeiro é incrementado o valor de <code class="highlighter-rouge">n</code> e depois ele é utilizado.</p>
+  </li>
+</ul>
+
+<p>No caso do <code class="highlighter-rouge">cout &lt;&lt;n++</code>, o que realmente acontece é que primeiro é impresso o valor de <code class="highlighter-rouge">n</code> e depois ocorre o incremento. Em <code class="highlighter-rouge">cout &lt;&lt;++n</code> é o contrário, primeiro ocorre o incremento e depois é impresso o valor de <code class="highlighter-rouge">n</code> (já incrementado em 1 unidade).</p>
+
+<p>Valor de <code class="highlighter-rouge">n</code> linha por linha:</p>
+
+<div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;bits/stdc++.h&gt;
+</span><span class="k">using</span> <span class="k">namespace</span> <span class="n">std</span><span class="p">;</span>
+
+<span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
+    <span class="c1">// n = 10</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span> <span class="c1">// n = 10</span>
+    <span class="c1">// n = 10</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;</span><span class="n">n</span><span class="o">++</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span> <span class="c1">// n = 10</span>
+    <span class="c1">// n = 11</span>
+    <span class="n">cout</span> <span class="o">&lt;&lt;++</span><span class="n">n</span> <span class="o">&lt;&lt;</span><span class="n">endl</span><span class="p">;</span> <span class="c1">// n = 12</span>
+    <span class="c1">// n = 12</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+  </div><a class="u-url" href="/publicacoes/incremento-dif.md" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">
+		GRUB <br>Grupo de estudos Balan</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">
+			<!--GRUB-->
+            </li><li><a class="u-email" href="mailto:grub.ufabc@gmail.com">grub.ufabc@gmail.com</a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://www.facebook.com/grub.ufabc"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#facebook"></use></svg> <span class="username">grub.ufabc</span></a></li><li><a href="https://instagram.com/grubufabc"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#instagram"></use></svg> <span class="username">grubufabc</span></a></li></ul>
+</div>
+
+      <div class="footer-col footer-col-3">
+        <p>A equipe de programação competitiva da UFABC! </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
