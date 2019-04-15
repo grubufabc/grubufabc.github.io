@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "n+1, n++ e ++n, qual usar?"
+title:  "n+1, n++ e ++n, qual utilizar?"
 date:   2019-04-04 20:00:00 -0300
 categories: jekyll update
 ---
@@ -44,9 +44,9 @@ A resposta certa são os números... *suspense*... 11, 10, 12 !!!
 
   Caso o objetivo seja acrescentar 1 em `n`, precisamos escrever `n = n+1`, ou seja, atribua a `n` o valor de `n+1`.
 
-- **n++:** é o mesmo que escrever `n = n+1`, ou seja, estamos adicionando 1 à variável `n`. Em caso de utilização de `n` durante o esse incremento, primeiro é utilizado o valor de `n` e depois ele é incrementado.
+- **n++:** é o mesmo que escrever `n = n+1`, ou seja, estamos adicionando 1 à variável `n`. No caso da utilização de `n` durante esse incremento, primeiro é utilizado o valor de `n` e depois ele é incrementado.
 
-- **++n:** é o mesmo que escrever `n = n+1`, ou seja, estamos adicionando 1 à variável `n`. Em caso de utilização de `n` durante o esse incremento, primeiro é incrementado o valor de `n` e depois ele é utilizado.
+- **++n:** é o mesmo que escrever `n = n+1`, ou seja, estamos adicionando 1 à variável `n`. No caso da utilização de `n` durante esse incremento, primeiro é incrementado o valor de `n` e depois ele é utilizado.
 
 No caso do `cout <<n++`, o que realmente acontece é que primeiro é impresso o valor de `n` e depois ocorre o incremento. Em `cout <<++n` é o contrário, primeiro ocorre o incremento e depois é impresso o valor de `n` (já incrementado em 1 unidade).
 

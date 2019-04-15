@@ -12,7 +12,7 @@ Nós possuímos alguns horários de encontro durante o quadrimestre. Eles podem 
 
 | Horário        | Descrição                                                    | Local                        |
 | -------------- | ------------------------------------------------------------ | ---------------------------- |
-| Terça, 14-16h  | Geralmente é usado para competições ou aulas mais avançadas para os veteranos. O assunto é definido até um dia antes e é publicado no grupo do WhatsApp. | L405-2, Bloco A, Santo André |
-| Quinta, 14-16h | Aula para os iniciantes da equipe. Os assuntos são pré definidos no inicio do quadrimestre e também são publicados no grupo do WhatsApp. | L404-2, Bloco A, Santo André |
-| Sexta, 13-18h  | Horário definido para treino conjunto. Esse é o dia perfeito para conhecer os outros integrantes, resolver uns problemas em conjunto, tirar dúvidas e realizar competições. | L405-2, Bloco A, Santo André |
+| Terça, 14-16h  | Competições ou aulas mais avançadas para os veteranos. O assunto é definido até um dia antes e é publicado no grupo do WhatsApp/Instagram. | L405-2, Bloco A, Santo André |
+| Quinta, 14-16h | Aula para os iniciantes da equipe. Os assuntos são pré definidos no inicio do quadrimestre e também são publicados no grupo do WhatsApp/Instagarm. | L404-2, Bloco A, Santo André |
+| Sexta, 13-18h  | Dia para treino em conjunto. Esse é o momento perfeito para conhecer os outros integrantes da equipe, resolver problemas de listas, tirar dúvidas e realizar competições em grupo. | L405-2, Bloco A, Santo André |
 
