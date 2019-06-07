@@ -6,9 +6,9 @@ permalink: /equipe/
 
 Esse é o histórico anual da GRUB a partir da sua fundação!
 
-# 2018
+## 2018
 
-## Times da UFABC participantes
+**Times da UFABC participantes**
 
 | Nome                | Integrantes                                                  | Técnico                    |
 | ------------------- | ------------------------------------------------------------ | -------------------------- |
@@ -17,7 +17,7 @@ Esse é o histórico anual da GRUB a partir da sua fundação!
 | a.out               | Caio Cesar Ramalho Follador <br>Vitor Costa de Farias <br>Pedro de Souza Tunin<br>Melissa Kelly Lima da Silva (reserva) | Prof.ª Dra. Cristiane Sato |
 | I'm not your father | Renata dos Santos Silva Paes<br>William de Souza Gomes<br>Nicholas Gobetti Oshiro<br>Kleverson Nascimento Pinto (reserva) | Prof.ª Dra. Cristiane Sato |
 
-## Classificação no Brasil
+**Classificação no Brasil**
 
 Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/hist/2018/):
 
