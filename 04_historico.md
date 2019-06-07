@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Histórico
-permalink: /equipe/
+permalink: /historico/
 ---
 
 Esse é o histórico anual da GRUB a partir da sua fundação!
