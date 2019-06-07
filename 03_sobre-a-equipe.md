@@ -8,7 +8,7 @@ permalink: /equipe/
 
 **Gosta de competições? Quer ser reconhecido em qualquer empresa grande que você for? Quer dar umas boas risadas, fazer uma baguncinha e, de quebra, aprender a programar? Seus sonhos tornaram-se realidade!**
 
-O GRUB é uma grupo de programação competitiva que tem como principal objetivo reunir estudantes interessados em participar da Maratona de Programação para estudar em conjunto, dando mais motivação e criando vínculos entre os participantes.
+O GRUB é um grupo de programação competitiva que tem como principal objetivo reunir estudantes interessados em participar da Maratona de Programação para estudar em conjunto, dando mais motivação e criando vínculos entre os participantes.
 
 # “Mas afinal, o que eu ganho participando??”
 
