@@ -1,4 +1,48 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-04-11T17:53:05-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GRUB</title><subtitle>A equipe de programação competitiva da UFABC! </subtitle><entry><title type="html">n+1, n++ e ++n, qual usar?</title><link href="http://localhost:4000/publicacoes/incremento-dif.md" rel="alternate" type="text/html" title="n+1, n++ e ++n, qual usar?" /><published>2019-04-04T20:00:00-03:00</published><updated>2019-04-04T20:00:00-03:00</updated><id>http://localhost:4000/publicacoes/incremento-dif.md</id><content type="html" xml:base="http://localhost:4000/publicacoes/incremento-dif.md">&lt;p&gt;Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, &lt;strong&gt;qual a diferença entre n+1, n++ e ++n?&lt;/strong&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-12T00:23:26-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GRUB</title><subtitle>A equipe de programação competitiva da UFABC! </subtitle><entry><title type="html">Resumo: Aulas iniciantes 2019.2</title><link href="http://localhost:4000/publicacoes/aula-bixos-2019.2" rel="alternate" type="text/html" title="Resumo: Aulas iniciantes 2019.2" /><published>2019-06-11T23:00:00-03:00</published><updated>2019-06-11T23:00:00-03:00</updated><id>http://localhost:4000/publicacoes/aula-bixos-2019.2</id><content type="html" xml:base="http://localhost:4000/publicacoes/aula-bixos-2019.2">&lt;h2 id=&quot;aula-01---introdução-1106&quot;&gt;Aula 01 - Introdução (11/06)&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Apresentação GRUB (&lt;a href=&quot;https://drive.google.com/open?id=1Lh8QaOrFB8kM2n4pR2wVP6JtMHbCKq_N&quot;&gt;disponível em pdf&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Sobre as aulas:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Linguagem que será utilizada: C++&lt;/li&gt;
+  &lt;li&gt;Local: foi reservado o Laboratório 404-2, mas devido a grande quantidade de pessoas interessadas, iremos abrir mais um laboratório  (ainda não definido) no mesmo horário e possivelmente no mesmo andar.&lt;/li&gt;
+  &lt;li&gt;Sistema Operacional: &lt;a href=&quot;https://pt.wikipedia.org/wiki/Ubuntu&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Editor de código: &lt;a href=&quot;https://pt.wikipedia.org/wiki/Geany&quot;&gt;Geany&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Caso você esteja em um SO Windows, você pode &lt;a href=&quot;https://repl.it/languages&quot;&gt;acessar o repl.it&lt;/a&gt; (cuidado pois todos podem ver seu código)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Referência principal das aulas: &lt;a href=&quot;http://www.codcad.com/course/1&quot;&gt;CodCad&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;Você também pode usar o &lt;a href=&quot;https://neps.academy/courses&quot;&gt;NepsAcademy&lt;/a&gt; (tem os mesmos problemas e é mais atualizado)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Conteúdo passado na aula:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Variáveis do tipo &lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt;e &lt;code class=&quot;highlighter-rouge&quot;&gt;double&lt;/code&gt; (&lt;a href=&quot;http://www.codcad.com/lesson/2&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Operadores:  &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt;  (&lt;a href=&quot;http://excript.com/cpp/operador-aritmetico-cpp.html&quot;&gt;link 1&lt;/a&gt;, &lt;a href=&quot;http://excript.com/cpp/modulo-divisao-cpp.html&quot;&gt;link 2&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Ler entradas com o &lt;code class=&quot;highlighter-rouge&quot;&gt;cin&lt;/code&gt; e imprimir saída com o &lt;code class=&quot;highlighter-rouge&quot;&gt;cout&lt;/code&gt; (&lt;a href=&quot;http://www.codcad.com/lesson/2&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Comando &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; (&lt;a href=&quot;http://www.codcad.com/lesson/3&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;Operador &lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt; (&lt;a href=&quot;http://excript.com/cpp/operador-relacional-cpp.html&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Alguns problemas resolvidos na aula:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.codcad.com/problem/2&quot;&gt;Soma&lt;/a&gt; - CodCad&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.codcad.com/problem/11&quot;&gt;Tomadas&lt;/a&gt; - OBI2013, Fase 1, Nível Júnior&lt;/li&gt;
+  &lt;li&gt;Identificar se um número é par ou ímpar&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;aula-02---loops-1806&quot;&gt;Aula 02 - Loops (18/06)&lt;/h2&gt;
+
+&lt;p&gt;-&lt;/p&gt;</content><author><name></name></author><summary type="html">Aula 01 - Introdução (11/06)</summary></entry><entry><title type="html">n+1, n++ e ++n, qual utilizar?</title><link href="http://localhost:4000/publicacoes/incremento-dif" rel="alternate" type="text/html" title="n+1, n++ e ++n, qual utilizar?" /><published>2019-04-04T20:00:00-03:00</published><updated>2019-04-04T20:00:00-03:00</updated><id>http://localhost:4000/publicacoes/incremento-dif</id><content type="html" xml:base="http://localhost:4000/publicacoes/incremento-dif">&lt;p&gt;Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, &lt;strong&gt;qual a diferença entre n+1, n++ e ++n?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Bom, para começar analise o código a seguir e tente adivinhar o que ele irá imprimir:&lt;/p&gt;
 
@@ -41,10 +85,10 @@
     &lt;p&gt;Caso o objetivo seja acrescentar 1 em &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;, precisamos escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, atribua a &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n+1&lt;/code&gt;.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;n++:&lt;/strong&gt; é o mesmo que escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, estamos adicionando 1 à variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;. Em caso de utilização de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; durante o esse incremento, primeiro é utilizado o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ele é incrementado.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;n++:&lt;/strong&gt; é o mesmo que escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, estamos adicionando 1 à variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;. No caso da utilização de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; durante esse incremento, primeiro é utilizado o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ele é incrementado.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;strong&gt;++n:&lt;/strong&gt; é o mesmo que escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, estamos adicionando 1 à variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;. Em caso de utilização de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; durante o esse incremento, primeiro é incrementado o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ele é utilizado.&lt;/p&gt;
+    &lt;p&gt;&lt;strong&gt;++n:&lt;/strong&gt; é o mesmo que escrever &lt;code class=&quot;highlighter-rouge&quot;&gt;n = n+1&lt;/code&gt;, ou seja, estamos adicionando 1 à variável &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt;. No caso da utilização de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; durante esse incremento, primeiro é incrementado o valor de &lt;code class=&quot;highlighter-rouge&quot;&gt;n&lt;/code&gt; e depois ele é utilizado.&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
