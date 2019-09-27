@@ -47,7 +47,7 @@ Realizando 2 problemas, com 113 de penalidade, obtiveram 345a. colocação no Br
 
 ![](./../img/codaraul_regional_2019.jpg)
 
-Time formado por Filipe, Igor e Bryan. 
+Time formado por Filipe, Igor e [Bryan](https://www.youtube.com/watch?v=kwWP6-HuRrQ). 
 
 Realizando 2 problemas, com 178 de penalidade, obtiveram 401a. colocação no Brasil e a 16a. colocação na sede de São Paulo.
 
