@@ -10,6 +10,8 @@ Durante o ano vamos fazendo algumas listas de exercícios, elas são postadas aq
 
 - [BixeCamp 2019 - MaratonUSP](https://docs.google.com/spreadsheets/d/1Ha2l82K29LeH0M6Q6dp5xnv22dng39XYRwq-eQgJYWg/edit?usp=sharing)
 
+- [Exercícios para iniciantes - Mashup](https://docs.google.com/spreadsheets/d/1lSujoQJqejXiwb-L-yXe3cloXWaK-VwOwzw7BlpoMps/edit?usp=sharing)
+
 # Intermediário
 
 - [Truculência 2018-2](https://docs.google.com/spreadsheets/d/149wEP7dbO9pUzJ_306oDOsf_t9ST9ZKqEIg6i7VIzcI/edit?usp=sharing)

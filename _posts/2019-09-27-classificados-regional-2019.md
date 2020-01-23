@@ -13,7 +13,7 @@ Nessa primeira fase participaram mais de 700 equipes ao longo de todo o Brasil, 
 
 ## buiatchaka 
 
-![](./../img/buiatchaka_regional_2019.jpg)
+![](./../img/buiatchaka-regional-2019.jpg)
 
 Time formado por Jonatas, Wesley e Bryan. 
 
@@ -21,7 +21,7 @@ Realizando 7 problemas, com 1087 de penalidade, obtiveram 36a. colocação no Br
 
 ## Stranger Strings 
 
-![](./../img/strangerstrings_regional_2019.jpg)
+![](./../img/strangerstrings-regional-2019.jpg)
 
 Time formado por Robert, Pedro e Daniel. 
 
@@ -29,7 +29,7 @@ Realizando 2 problemas, com 46 de penalidade, obtiveram 176a. colocação no Bra
 
 ## C_MinusMinus 
 
-![](./../img/cminusminus_regional_2019.jpg)
+![](./../img/cminusminus-regional-2019.jpg)
 
 Time formado por William, Dimitri e Matheus. 
 
@@ -37,7 +37,7 @@ Realizando 2 problemas, com 74 de penalidade, obtiveram 248a. colocação no Bra
 
 ## Balão Mágico
 
-![](./../img/balaomagico_regional_2019.jpg)
+![](./../img/balaomagico-regional-2019.jpg)
 
 Time formado por Leonardo, Edson e Pedro. 
 
@@ -45,7 +45,7 @@ Realizando 2 problemas, com 113 de penalidade, obtiveram 345a. colocação no Br
 
 ## Coda Raul
 
-![](./../img/codaraul_regional_2019.jpg)
+![](./../img/codaraul-regional-2019.jpg)
 
 Time formado por Filipe, Igor e [Bryan](https://www.youtube.com/watch?v=kwWP6-HuRrQ). 
 
@@ -53,7 +53,7 @@ Realizando 2 problemas, com 178 de penalidade, obtiveram 401a. colocação no Br
 
 ## Quero Café++
 
-![](./../img/querocafe_regional_2019.jpg)
+![](./../img/querocafe-regional-2019.jpg)
 
 Time formado por Nathalia, Thales e André. 
 
