@@ -4,7 +4,7 @@ title: Equipe
 permalink: /equipe/
 ---
 
-![Treze participantes da GRUB na regional da Maratona de Programação de 2018](/img/times_regional_2018.jpg)
+![Treze participantes da GRUB na regional da Maratona de Programação de 2018](./img/regional/2019/participantes-regional-2019.jpg)
 
 **Gosta de competições? Quer ser reconhecido em qualquer empresa grande que você for? Quer dar umas boas risadas, fazer uma baguncinha e, de quebra, aprender a programar? Seus sonhos tornaram-se realidade!**
 

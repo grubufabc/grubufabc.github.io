@@ -10,10 +10,9 @@ Esse é o histórico anual da GRUB a partir da sua fundação!
 
 ### Etapa Regional
 
-![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2019](/home/wesley/Documents/grub/grubufabc.github.io/img/regional/2019/participantes-regional-2019.jpg)
+![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2019](./img/regional/2019/participantes-regional-2019.jpg)
 
 <center>Foto em grupo dos estudantes que participaram da Maratona de Programação em 2019</center>
-
 **Times da UFABC participantes**
 
 | Nome             | Integrantes                                                  | Técnico                    |
@@ -42,12 +41,11 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 
 | Equipe     | Regional (Total = 803) |
 | ---------- | :--------------------: |
-| buiatchaka |           º            |
+| buiatchaka |          31º           |
 
-![](/home/wesley/Documents/grub/grubufabc.github.io/img/nacional/2019/nacional(6).jpg)
+![](./img/nacional/2019/nacional(6).jpg)
 
 <center>Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição</center>
-
 ## 2018
 
 ### Etapa Regional
@@ -55,7 +53,6 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 ![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2018](./img/regional/2018/times_regional_2018.jpg)
 
 <center>Foto em grupo dos estudantes que participaram da Maratona de Programação em 2018</center>
-
 **Times da UFABC participantes**
 
 | Nome                | Integrantes                                                  | Técnico                    |
@@ -80,9 +77,8 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 
 | Equipe     | Final Brasileira (Total = 71) |
 | ---------- | :---------------------------: |
-| lupa linda |              31º              |
+| lupa linda |              28º              |
 
 ![Time "lupa linda" classificado para a Final Nacional 2018](./img/nacional/2018/equipe_nacional_2018.jpg)
 
 <center>Time "lupa linda" classificado para a Final Nacional 2018, ficando na 28º posição</center>
-
