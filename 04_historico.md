@@ -43,7 +43,7 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 | ---------- | :--------------------: |
 | buiatchaka |          31º           |
 
-![](./img/nacional/2019/nacional(6).jpg)
+![Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição](./img/nacional/2019/nacional(6).jpg)
 
 <center>Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição</center>
 ## 2018
