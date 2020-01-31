@@ -26,7 +26,7 @@ Esse é o histórico anual da GRUB a partir da sua fundação!
 
 **Classificação no Brasil**
 
-Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/hist/2018/):
+Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/primfase19/reports/ScoreBrasil.html):
 
 | Equipe           | Regional (Total = 726) |
 | ---------------- | :--------------------: |
@@ -39,9 +39,9 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 
 ### Final Brasileira
 
-| Equipe     | Regional (Total = 803) |
-| ---------- | :--------------------: |
-| buiatchaka |          31º           |
+| Equipe     | Final Brasileira (Total = 57) |
+| ---------- | :---------------------------: |
+| buiatchaka |              31º              |
 
 ![Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição](./img/nacional/2019/nacional6.jpg)
 
