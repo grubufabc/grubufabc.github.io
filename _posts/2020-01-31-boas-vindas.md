@@ -36,7 +36,7 @@ O processo seletivo é o seguinte: só chegar. Sabemos que é chato não gostar 
 
 Temos sim.
 
-- Whatsapp: [grupo do WhatsApp](bit.ly/grubinicianteswpp)
-- Telegram: [grupo do Telegram](bit.ly/grubiniciantestel)
+- Whatsapp: [grupo do WhatsApp](https://bit.ly/grubinicianteswpp)
+- Telegram: [grupo do Telegram](https://bit.ly/grubiniciantestel)
 
 Qualquer outra dúvida ou sugestão é só mandar nos grupos, lá a gente também vai divulgar o tema das aulas. Aguardo vocês!
