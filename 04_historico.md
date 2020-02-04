@@ -17,7 +17,7 @@ Esse é o histórico anual da GRUB a partir da sua fundação!
 
 | Nome             | Integrantes                                                  | Técnico                    |
 | ---------------- | ------------------------------------------------------------ | -------------------------- |
-| buiatchaka       | Bryan Batista Valeriano <br/>Vinícius Veronese Gonçalves<br/>Wesley Pereira da Silva<br/>Michel Munhoz (reserva) | Prof.ª Dra. Cristiane Sato |
+| buiatchaka       | Bryan Batista Valeriano <br/>Jonatas Duarte Souza<br/>Wesley Pereira da Silva<br/>Michel Munhoz (reserva) | Prof.ª Dra. Cristiane Sato |
 | Stranger Strings | Robert Chinem Fujii <br/>Pedro Ives Silva Santos<br/>Daniel Mendes Vale de Sá<br/>Marcos Baldrigue Andrade (reserva) | Prof.ª Dra. Cristiane Sato |
 | C_MinusMinus     | William de Souza Gomes <br/>Matheus Costa Damasceno<br/>Dimitri Leandro de Oliveira Silva<br/>Karoliny dos Anjos Pereira Alves (reserva) | Prof.ª Dra. Cristiane Sato |
 | Balão Mágico     | Pedro de Souza Tunin<br/>Leonardo Ryo Nakagawa<br/>Edson Eidi Hossotani<br/>Paulo Henrique Moura Rocha (reserva) | Prof.ª Dra. Cristiane Sato |
@@ -45,7 +45,8 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/p
 
 ![Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição](./img/nacional/2019/nacional6.jpg)
 
-<center>Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição</center>
+<center>Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição. Da esquerda para a direita: Bryan Batista Valeriano, Jonatas Duarte Souza e Wesley Pereira da Silva.</center>
+
 ## 2018
 
 ### Etapa Regional
@@ -81,4 +82,4 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 
 ![Time "lupa linda" classificado para a Final Nacional 2018](./img/nacional/2018/equipe_nacional_2018.jpg)
 
-<center>Time "lupa linda" classificado para a Final Nacional 2018, ficando na 28º posição</center>
+<center>Time "lupa linda" classificado para a Final Nacional 2018, ficando na 28º posição. Da esquerda para a direita: Bryan Batista Valeriano, Jonatas Duarte Souza e Wesley Pereira da Silva.</center>
