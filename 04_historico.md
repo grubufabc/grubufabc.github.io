@@ -46,7 +46,6 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/p
 ![Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição](./img/nacional/2019/nacional6.jpg)
 
 <center>Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição. Da esquerda para a direita: Bryan Batista Valeriano, Jonatas Duarte Souza e Wesley Pereira da Silva.</center>
-
 ## 2018
 
 ### Etapa Regional
@@ -82,4 +81,4 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 
 ![Time "lupa linda" classificado para a Final Nacional 2018](./img/nacional/2018/equipe_nacional_2018.jpg)
 
-<center>Time "lupa linda" classificado para a Final Nacional 2018, ficando na 28º posição. Da esquerda para a direita: Bryan Batista Valeriano, Jonatas Duarte Souza e Wesley Pereira da Silva.</center>
+<center>Time "lupa linda" classificado para a Final Nacional 2018, ficando na 28º posição. Da esquerda para a direita: Vinícius Veronese Gonçalves, Daniel Escudero, Bryan Batista Valeriano e Wesley Pereira da Silva.</center>
