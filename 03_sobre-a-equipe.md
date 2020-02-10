@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Equipe
-permalink: /equipe/
+title: Sobre
+permalink: /sobre/
 ---
 
 ![Treze participantes da GRUB na regional da Maratona de Programação de 2018](./img/regional/2019/participantes-regional-2019.jpg)
