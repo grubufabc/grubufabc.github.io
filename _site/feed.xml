@@ -1,48 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-06-12T00:23:26-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GRUB</title><subtitle>A equipe de programação competitiva da UFABC! </subtitle><entry><title type="html">Resumo: Aulas iniciantes 2019.2</title><link href="http://localhost:4000/publicacoes/aula-bixos-2019.2" rel="alternate" type="text/html" title="Resumo: Aulas iniciantes 2019.2" /><published>2019-06-11T23:00:00-03:00</published><updated>2019-06-11T23:00:00-03:00</updated><id>http://localhost:4000/publicacoes/aula-bixos-2019.2</id><content type="html" xml:base="http://localhost:4000/publicacoes/aula-bixos-2019.2">&lt;h2 id=&quot;aula-01---introdução-1106&quot;&gt;Aula 01 - Introdução (11/06)&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2020-02-10T11:48:54-03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">GRUB</title><subtitle>A equipe de programação competitiva da UFABC! </subtitle><entry><title type="html">Regional 2019</title><link href="http://localhost:4000/publicacoes/classificados-regional-2019" rel="alternate" type="text/html" title="Regional 2019" /><published>2019-09-27T17:00:00-03:00</published><updated>2019-09-27T17:00:00-03:00</updated><id>http://localhost:4000/publicacoes/classificados-regional-2019</id><content type="html" xml:base="http://localhost:4000/publicacoes/classificados-regional-2019">&lt;p&gt;No dia 14 de Setembro de 2019 ocorreu a 24a. edição da Maratona SBC de Programação. Junto com ela veio uma ótima notícia: conseguimos classificar uma equipe para a etapa Final Brasileira, que acontecerá na Paraíba!!&lt;/p&gt;
+
+&lt;p&gt;Nessa primeira fase participaram mais de 700 equipes ao longo de todo o Brasil, sendo classificadas aproximadamente 70 delas para a etapa Nacional, que acontecerá em Campina Grande - Paraíba.&lt;/p&gt;
+
+&lt;h1 id=&quot;equipes-participantes&quot;&gt;Equipes participantes&lt;/h1&gt;
+
+&lt;h2 id=&quot;buiatchaka&quot;&gt;buiatchaka&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../img/regional/2019/buiatchaka-regional-2019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time formado por Jonatas, Wesley e Bryan.&lt;/p&gt;
+
+&lt;p&gt;Realizando 7 problemas, com 1087 de penalidade, obtiveram 36a. colocação no Brasil e a 4a. colocação na sede de São Paulo (nossa melhor posição até hoje), classificando-se para a Final Brasileira em Campina Grande - Paraíba.&lt;/p&gt;
+
+&lt;h2 id=&quot;stranger-strings&quot;&gt;Stranger Strings&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../img/regional/2019/strangerstrings-regional-2019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time formado por Robert, Pedro e Daniel.&lt;/p&gt;
+
+&lt;p&gt;Realizando 2 problemas, com 46 de penalidade, obtiveram 176a. colocação no Brasil e a 8a. colocação na sede de São Paulo.&lt;/p&gt;
+
+&lt;h2 id=&quot;c_minusminus&quot;&gt;C_MinusMinus&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../img/regional/2019/cminusminus-regional-2019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time formado por William, Dimitri e Matheus.&lt;/p&gt;
+
+&lt;p&gt;Realizando 2 problemas, com 74 de penalidade, obtiveram 248a. colocação no Brasil e a 10a. colocação na sede de São Paulo.&lt;/p&gt;
+
+&lt;h2 id=&quot;balão-mágico&quot;&gt;Balão Mágico&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../img/regional/2019/balaomagico-regional-2019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time formado por Leonardo, Edson e Pedro.&lt;/p&gt;
+
+&lt;p&gt;Realizando 2 problemas, com 113 de penalidade, obtiveram 345a. colocação no Brasil e a 12a. colocação na sede de São Paulo.&lt;/p&gt;
+
+&lt;h2 id=&quot;coda-raul&quot;&gt;Coda Raul&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../img/regional/2019/codaraul-regional-2019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time formado por Filipe, Igor e &lt;a href=&quot;https://www.youtube.com/watch?v=kwWP6-HuRrQ&quot;&gt;Bryan&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Realizando 2 problemas, com 178 de penalidade, obtiveram 401a. colocação no Brasil e a 16a. colocação na sede de São Paulo.&lt;/p&gt;
+
+&lt;h2 id=&quot;quero-café&quot;&gt;Quero Café++&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;./../img/regional/2019/querocafe-regional-2019.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Time formado por Nathalia, Thales e André.&lt;/p&gt;
+
+&lt;p&gt;Realizando 2 problemas, com 316 de penalidade, obtiveram 475a. colocação no Brasil e a 19a. colocação na sede de São Paulo.&lt;/p&gt;
+
+&lt;h1 id=&quot;agradecimentos&quot;&gt;Agradecimentos&lt;/h1&gt;
+
+&lt;p&gt;Todas as equipes estão de parabéns!
+Um muito obrigado a todos que participaram e um agradecimento especial à nossa treinadora, a Profa. Dra. Cristiane Sato, ela é demais!&lt;/p&gt;
+
+&lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;Apresentação GRUB (&lt;a href=&quot;https://drive.google.com/open?id=1Lh8QaOrFB8kM2n4pR2wVP6JtMHbCKq_N&quot;&gt;disponível em pdf&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Sobre as aulas:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Linguagem que será utilizada: C++&lt;/li&gt;
-  &lt;li&gt;Local: foi reservado o Laboratório 404-2, mas devido a grande quantidade de pessoas interessadas, iremos abrir mais um laboratório  (ainda não definido) no mesmo horário e possivelmente no mesmo andar.&lt;/li&gt;
-  &lt;li&gt;Sistema Operacional: &lt;a href=&quot;https://pt.wikipedia.org/wiki/Ubuntu&quot;&gt;Ubuntu&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Editor de código: &lt;a href=&quot;https://pt.wikipedia.org/wiki/Geany&quot;&gt;Geany&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Caso você esteja em um SO Windows, você pode &lt;a href=&quot;https://repl.it/languages&quot;&gt;acessar o repl.it&lt;/a&gt; (cuidado pois todos podem ver seu código)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Referência principal das aulas: &lt;a href=&quot;http://www.codcad.com/course/1&quot;&gt;CodCad&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;Você também pode usar o &lt;a href=&quot;https://neps.academy/courses&quot;&gt;NepsAcademy&lt;/a&gt; (tem os mesmos problemas e é mais atualizado)&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Conteúdo passado na aula:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Variáveis do tipo &lt;code class=&quot;highlighter-rouge&quot;&gt;int&lt;/code&gt;e &lt;code class=&quot;highlighter-rouge&quot;&gt;double&lt;/code&gt; (&lt;a href=&quot;http://www.codcad.com/lesson/2&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Operadores:  &lt;code class=&quot;highlighter-rouge&quot;&gt;+&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;-&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;%&lt;/code&gt;  (&lt;a href=&quot;http://excript.com/cpp/operador-aritmetico-cpp.html&quot;&gt;link 1&lt;/a&gt;, &lt;a href=&quot;http://excript.com/cpp/modulo-divisao-cpp.html&quot;&gt;link 2&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Ler entradas com o &lt;code class=&quot;highlighter-rouge&quot;&gt;cin&lt;/code&gt; e imprimir saída com o &lt;code class=&quot;highlighter-rouge&quot;&gt;cout&lt;/code&gt; (&lt;a href=&quot;http://www.codcad.com/lesson/2&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Comando &lt;code class=&quot;highlighter-rouge&quot;&gt;if&lt;/code&gt; (&lt;a href=&quot;http://www.codcad.com/lesson/3&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
-  &lt;li&gt;Operador &lt;code class=&quot;highlighter-rouge&quot;&gt;==&lt;/code&gt; (&lt;a href=&quot;http://excript.com/cpp/operador-relacional-cpp.html&quot;&gt;link&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;Alguns problemas resolvidos na aula:&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.codcad.com/problem/2&quot;&gt;Soma&lt;/a&gt; - CodCad&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://www.codcad.com/problem/11&quot;&gt;Tomadas&lt;/a&gt; - OBI2013, Fase 1, Nível Júnior&lt;/li&gt;
-  &lt;li&gt;Identificar se um número é par ou ímpar&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;aula-02---loops-1806&quot;&gt;Aula 02 - Loops (18/06)&lt;/h2&gt;
-
-&lt;p&gt;-&lt;/p&gt;</content><author><name></name></author><summary type="html">Aula 01 - Introdução (11/06)</summary></entry><entry><title type="html">n+1, n++ e ++n, qual utilizar?</title><link href="http://localhost:4000/publicacoes/incremento-dif" rel="alternate" type="text/html" title="n+1, n++ e ++n, qual utilizar?" /><published>2019-04-04T20:00:00-03:00</published><updated>2019-04-04T20:00:00-03:00</updated><id>http://localhost:4000/publicacoes/incremento-dif</id><content type="html" xml:base="http://localhost:4000/publicacoes/incremento-dif">&lt;p&gt;Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, &lt;strong&gt;qual a diferença entre n+1, n++ e ++n?&lt;/strong&gt;&lt;/p&gt;
+  &lt;li&gt;&lt;a href=&quot;http://maratona.ime.usp.br/primfase19/reports/ScoreBrasil.html&quot;&gt;Placar final no Brasil&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;http://maratona.ime.usp.br/vagas19.html&quot;&gt;Classificados para a Final Brasileira 2019&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><summary type="html">No dia 14 de Setembro de 2019 ocorreu a 24a. edição da Maratona SBC de Programação. Junto com ela veio uma ótima notícia: conseguimos classificar uma equipe para a etapa Final Brasileira, que acontecerá na Paraíba!!</summary></entry><entry><title type="html">n+1, n++ e ++n, qual utilizar?</title><link href="http://localhost:4000/publicacoes/incremento-dif" rel="alternate" type="text/html" title="n+1, n++ e ++n, qual utilizar?" /><published>2019-04-04T20:00:00-03:00</published><updated>2019-04-04T20:00:00-03:00</updated><id>http://localhost:4000/publicacoes/incremento-dif</id><content type="html" xml:base="http://localhost:4000/publicacoes/incremento-dif">&lt;p&gt;Essa é uma dúvida muito comum no início do estudo de uma linguagem de programação. Afinal, &lt;strong&gt;qual a diferença entre n+1, n++ e ++n?&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Bom, para começar analise o código a seguir e tente adivinhar o que ele irá imprimir:&lt;/p&gt;
 

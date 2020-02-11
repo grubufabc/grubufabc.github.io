@@ -10,7 +10,7 @@ Esse é o histórico anual da GRUB a partir da sua fundação!
 
 ### Etapa Regional
 
-![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2019](./img/regional/2019/participantes-regional-2019.jpg)
+![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2019](/img/regional/2019/participantes-regional-2019.jpg)
 
 <center>Foto em grupo dos estudantes que participaram da Maratona de Programação em 2019</center>
 **Times da UFABC participantes**
@@ -43,14 +43,14 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/p
 | ---------- | :---------------------------: |
 | buiatchaka |              31º              |
 
-![Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição](./img/nacional/2019/nacional6.jpg)
+![Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição](/img/nacional/2019/nacional6.jpg)
 
 <center>Time "buiatchaka" classificado para a Final Nacional 2019, ficando na 31º posição. Da esquerda para a direita: Bryan Batista Valeriano, Jonatas Duarte Souza e Wesley Pereira da Silva.</center>
 ## 2018
 
 ### Etapa Regional
 
-![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2018](./img/regional/2018/times_regional_2018.jpg)
+![Foto em grupo dos estudantes que participaram da Maratona de Programação em 2018](/img/regional/2018/times_regional_2018.jpg)
 
 <center>Foto em grupo dos estudantes que participaram da Maratona de Programação em 2018</center>
 **Times da UFABC participantes**
@@ -79,6 +79,6 @@ Dados segundo o [site da maratona de programação](http://maratona.ime.usp.br/h
 | ---------- | :---------------------------: |
 | lupa linda |              28º              |
 
-![Time "lupa linda" classificado para a Final Nacional 2018](./img/nacional/2018/equipe_nacional_2018.jpg)
+![Time "lupa linda" classificado para a Final Nacional 2018](/img/nacional/2018/equipe_nacional_2018.jpg)
 
 <center>Time "lupa linda" classificado para a Final Nacional 2018, ficando na 28º posição. Da esquerda para a direita: Vinícius Veronese Gonçalves, Daniel Escudero, Bryan Batista Valeriano e Wesley Pereira da Silva.</center>
