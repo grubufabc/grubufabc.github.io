@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bem vindos(as), ingressantes!"
-date:   2020-04-03 21:57:00 -0300
+date:   2020-01-31 21:57:00 -0300
 categories: jekyll update
 ---
 
