@@ -12,10 +12,10 @@ Nós possuímos alguns horários de encontro durante o quadrimestre. Eles podem 
 
 ## Iniciantes:
 
-| Dias   | Horário        | Descrição                                                    | Local         |
-| ------ | -------------- | ------------------------------------------------------------ | ------------- |
-| Terça  | 13h30 às 15h30 | A aula é dividida em 2 partes.<br />Parte 1: Resolução dos problemas do contest da quinta feira da semana anterior. <br />Parte 2: Apresentação de um assunto novo por um(a) dos(as) integrantes da GRUB. | S 214-0       |
-| Quinta | 13h30 às 15h30 | Contest de 2h para treinar os assuntos abordados nas aulas anteriores. | Não definido. |
+| Dias   | Horário        | Descrição                                                    | Local      |
+| ------ | -------------- | ------------------------------------------------------------ | ---------- |
+| Terça  | 13h30 às 15h30 | A aula é dividida em 2 partes.<br />Parte 1: Resolução dos problemas do contest da quinta feira da semana anterior. <br />Parte 2: Apresentação de um assunto novo por um(a) dos(as) integrantes da GRUB. | Sala 214-0 |
+| Quinta | 13h30 às 15h30 | Contest de 2h para treinar os assuntos abordados nas aulas anteriores. | Lab 404-2  |
 
 As aulas para iniciantes vão cobrir o necessário para você aprender a programar, então não precisa se preocupar em chegar sem saber nada!
 
