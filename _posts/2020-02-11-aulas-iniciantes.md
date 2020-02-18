@@ -8,3 +8,4 @@ categories: jekyll update
 Links para o resumo de cada aula. Para editar os arquivos é necessário fazer uma cópia.
 
 - [Aula 01 - Introdução à GRUB e condicionais](https://colab.research.google.com/drive/1heW7XGdTMc6VXloSjCGqgj8r25r7OFyD)
+- [Aula 02 - Loops e laços de repetição](https://colab.research.google.com/drive/1sZY9wv4s2WerqKV37lS4YNjmgFBVdOY5)
