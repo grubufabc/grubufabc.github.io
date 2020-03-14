@@ -5,6 +5,9 @@ date:   2020-02-11 17:00:00 -0300
 categories: jekyll update
 ---
 
+Link da Lista de exercícios:
+- [Lista de exercícios] (https://docs.google.com/spreadsheets/d/1lSujoQJqejXiwb-L-yXe3cloXWaK-VwOwzw7BlpoMps/edit#gid=0)
+
 Links para o resumo de cada aula. Para editar os arquivos é necessário fazer uma cópia.
 
 - [Aula 01 - Introdução à GRUB e condicionais](https://colab.research.google.com/drive/1heW7XGdTMc6VXloSjCGqgj8r25r7OFyD)
