@@ -5,7 +5,7 @@ date:   2020-02-11 17:00:00 -0300
 categories: jekyll update
 ---
 
-Link da Lista de exercícios.
+Link da lista de exercícios.
 
 - [Lista de exercícios](https://docs.google.com/spreadsheets/d/1lSujoQJqejXiwb-L-yXe3cloXWaK-VwOwzw7BlpoMps/edit#gid=0)
 
