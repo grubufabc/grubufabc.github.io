@@ -16,3 +16,4 @@ Links para o resumo de cada aula. Para editar os arquivos é necessário fazer u
 - [Aula 03 - Loops e laços de repetição (parte II)](https://colab.research.google.com/drive/1P5-DKZqI4XDBe_3r21lofoeeT8AYJdzo#scrollTo=SMS_p6ObGnTW)
 - [Aula 04 - Estrutura de dados e funções](https://colab.research.google.com/drive/1PGqxNxvxXvh6PaEUSEOwNn7kr7JGHouR)
 - [Aula 05 - Recursão](https://colab.research.google.com/drive/1qug5QWYQ-LZcPeNRzchLDUviw7DX_Hjp)
+- [Aula 06 - Busca binária](https://colab.research.google.com/drive/1CZ9GtIfRkA6tOsDq3f_0VjF9tNFsyBjV)
