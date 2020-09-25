@@ -15,6 +15,10 @@ Durante o ano vamos fazendo algumas listas de exercícios, elas são postadas aq
 # Intermediário
 
 - [Truculência 2018-2](https://docs.google.com/spreadsheets/d/149wEP7dbO9pUzJ_306oDOsf_t9ST9ZKqEIg6i7VIzcI/edit?usp=sharing)
+- [Codeforces Round #544 (Div. 3)](https://codeforces.com/contest/1133)
+## Solução
+-[Codeforces Round #544 (Div. 3) - upsolving](https://colab.research.google.com/drive/1LKAu3jukkeoOiPhn9wu6mo0hmtbTrTFM?usp=sharing)
+
 
 # Avançado
 
